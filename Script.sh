@@ -37,7 +37,16 @@ sleep 10
 #Clean the terminal
 clear
 #----------------------------------------------------------
-
-
-#Close the terminal after finishing all the lines
-exit
+#Install FUSE
+sudo apt install libfuse2
+#Wait 5 seconds and continue
+sleep 5
+#Clean the terminal
+clear
+#We check that the library is installed
+apt list --installed | grep fuse
+#Wait 10 seconds and continue
+sleep 10
+#Clean the terminal
+clear
+#----------------------------------------------------------
