@@ -3,41 +3,41 @@
 #!/bin/sh
 
 #----------------------------------------------------------
-#actualiza los repositorios
+#Update the repositories
 sudo apt update
-#Espera 5 segundos y continua
+#Wait 5 seconds and continue
 sleep 5
-#limpia la terminal
+#Clean the terminal
 clear
 #----------------------------------------------------------
 
 #----------------------------------------------------------
-#actualiza todas las aplicaciones pendientes de actualizar
+#Update all pending update applications
 sudo apt upgrade -y
 #Espera 5 segundos y continua
 sleep 5
-#limpia la terminal
+#Clean the terminal
 clear
 #----------------------------------------------------------
 
 #----------------------------------------------------------
-#instala el servidor SSH
+#Install SSH server
 sudo apt install openssh-server
-#Espera 5 segundos y continua
+#Wait 5 seconds and continue
 sleep 5
-#limpia la terminal
+#Clean the terminal
 clear
-#Activa e inicia el servidor SSH
+Activate and Start the SSH server
 sudo systemctl enable ssh
 sudo systemctl start ssh
-#Comprueba el estado del servidor SSH
+#Check the status of the SSH server
 sudo systemctl status ssh
-#Espera 10 segundos y continua
+#Wait 10 seconds and continue
 sleep 10
-#limpia la terminal
+#Clean the terminal
 clear
 #----------------------------------------------------------
 
 
-#Cierra la terminal al acabar todas las lineas
+#Close the terminal after finishing all the lines
 exit
