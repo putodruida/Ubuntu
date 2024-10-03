@@ -2,6 +2,6 @@
 
 * Update the repositories.
 * Update all pending update applications.
-* Insall, Activate and Start the SSH server.
-* Insall libfuse2 and heck that the library is installed.
+* Install, Activate and Start the SSH server.
+* Install libfuse2 and heck that the library is installed.
 
